@@ -1,0 +1,87 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+p, h1 {
+    color: white;
+    -webkit-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+}
+body {
+    background-color: black;
+}
+#nums {
+    font-size: 15px;
+    text-wrap: pretty;
+}
+#mainCanvas {
+    top: 0;
+    position: fixed;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+}
+.sleekBox {
+    backdrop-filter: blur(5px);
+    border: 1px solid white;
+    background-color: rgba(30, 30, 30, 0.5);
+}
+#logoBox {
+    position: absolute;
+    margin: 50px 0px 0px 50px;
+    padding: 6px 12px 6px 6px;
+    overflow: hidden;
+}
+#logoText {
+    font: italic bold 25px monaco, monospace;
+}
+#socBox {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    overflow: hidden;
+    vertical-align: top;
+    height: 70px;
+    overflow: hidden;
+}
+.socLogo {
+    width: 102px;
+    height: 102px;
+    display: inline;
+    border-image-slice: 300%;
+    margin-top: 35px;
+    transform: translate(0, -50%);
+    opacity: 60%;
+    transition: opacity 0.3s;
+}
+.socLogo:hover {
+    opacity: 100%;
+}
+#centerBox {
+    max-width: 800px;
+    top: 50%;
+    margin-left: 50vw;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+#centerText {
+    font: bold 60px monospace;
+}
+
+.reflected {
+    color:white;
+    z-index: 2;
+    transform: scale(1, -1);
+    opacity: 20%;
+    padding-bottom: 5px;
+    mask-image: linear-gradient(to top, black 0%, transparent 60%);
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
